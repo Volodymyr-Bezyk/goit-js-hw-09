@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
@@ -15,4 +17,37 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+#datetime-picker,
+#datetime-picker + button {
+  font-family: 'DM Sans', sans-serif;
+  background-color: rgb(141, 210, 238);
+  font-size: 22px;
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+  font-family: 'DM Sans', sans-serif;
+}
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.field > .value {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 700;
+}
+.field > .label {
+  font-size: 20px;
+}
+.field:not(:first-child) {
+  margin-left: 20px;
 }
