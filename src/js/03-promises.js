@@ -1,7 +1,7 @@
 import Notiflix from 'notiflix';
 
 const formRef = document.querySelector('.form');
-formRef.addEventListener('click', onFormSubmit);
+formRef.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(e) {
   e.preventDefault();
@@ -9,9 +9,7 @@ function onFormSubmit(e) {
   let position = 1;
   const amount = Number(formRef.elements.amount.value);
 
-  if (e.target.type === 'submit') {
-    promiseRepeater(position, delay, amount);
-  }
+  promiseRepeater(position, delay, amount);
 }
 
 function promiseRepeater(position, delay, amount) {
